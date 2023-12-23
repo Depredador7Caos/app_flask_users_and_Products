@@ -1,0 +1,33 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+
+{% if message %}
+
+  <h1 class="cp">{{message}}</h1>
+
+{% endif %}
+
+  <div class="container form px-3 py-3 shadow">
+    <h1 class="text-center cw py-4">SIGN IN</h1>
+    <form class="form-fluid px-4 py-4" action="/acceso-login" method="POST">
+      <div class="px-4 py-4">
+
+        <div class="px-4 py-4">
+          <label class="mb-2" for="l1"> Your Email</label>
+          <input class="input-less active mt-2 px-2 py-2" id="l1" type="email" name="txtCorreo" value="" placeholder="Inser your E-mail">
+        </div>
+
+        <div class="px-4 py-4">
+          <label class="mb-2" for="l2">Your password</label>
+          <input class="input-less mt-2 px-2 py-2" id="l2" type="password" name="txtPassword" value="" placeholder="Insert your password">
+        </div>
+        <div class="div-center px-4 py-4">
+          <button class="btn btn-large btn-success" type="submit" name="button"> Inisio de session </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+{% endblock content %}

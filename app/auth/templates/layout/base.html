@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> {% block title %} Logeo | {% endblock title %} </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+    <body>
+      <!-- Barra de navegación -->
+      {% include 'layout/_navbar.html' %}
+
+      {% block content %}
+
+
+
+      {% endblock content %}
+
+
+      <footer class="bg-b14 mb nav">
+        <div class="container flexbox">
+          <div class="px-1">
+            <a href="https://github.com/Depredador7Caos">
+              <i class='bx bxl-github icon-color-githud icon-2 hover-git'></i>
+            </a>
+          </div>
+          <div class="px-1">
+            <a href="https://github.com/Depredador7Caos">
+              <i class='bx bxl-facebook icon-color-facebook icon-2 hover-facebook'></i>
+            </a>
+          </div>
+          <div class="px-1">
+            <a href="https://github.com/Depredador7Caos">
+              <i class='bx bxl-whatsapp icon-color-whatsapp icon-2 hover-whatsapp'></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </body>
+
+</html>

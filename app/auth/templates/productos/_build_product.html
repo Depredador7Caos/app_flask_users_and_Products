@@ -1,0 +1,71 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <form class="form-fluid" action="{{url_for('loading.add_product')}}" method="post" >
+    <div class="container">
+
+      <div class="flex  mt-4 py-2">
+        <div class="col-6">
+          <label class="border" for=""> Nombre producto </label>
+          <input class="mt-2 px-2" type="text" name="nombre_producto" value="" placeholder="Nombre Product">
+        </div>
+        <div class="col-6">
+          <label class="border" for=""> Categoria producto </label>
+          <input class="mt-2 px-2" type="text" name="categoria_producto" value="" placeholder="Nombre Product">
+        </div>
+      </div>
+
+      <div class="flex  mt-4 py-2">
+        <div class="col-6">
+          <label class="border" for="">PRECIO</label>
+          <input class="mt-2 px-2" type="number" name="precio_producto" value="" placeholder="precio">
+        </div>
+
+        <div class="col-6">
+          <label class="border" for="">Cantidad a registrar</label>
+          <input class="mt-2 px-2" type="number" name="cantidad_producto" value="" placeholder="Agregue una conatidad">
+        </div>
+      </div>
+
+      <div class="col-12  mt-4 py-2">
+        <label class="border" for="">URL IMAGE</label>
+        <input class="mt-2 px-2" type="text" name="image_producto" value="" placeholder="URL image">
+      </div>
+
+      <div class="flex mt-4 py-2">
+        <div class="col-3">
+          <label class="border" for="">Fecha de entrada</label>
+          <input class="mt-2 px-2" type="date" name="entrada" value="">
+        </div>
+
+        <div class="col-3">
+          <label class="border" for="">Fecha de salida</label>
+          <input class="mt-2 px-2" type="date" name="salida" value="">
+        </div>
+
+        <div class="col-3">
+          <label class="border" for="">Fecha Caducidad</label>
+          <input class="mt-2 px-2" type="date" name="caducidad" value="">
+        </div>
+
+        <div class="col-3">
+          <label class="border" for="">Hora de caducidad</label>
+          <input class="mt-2 px-2" type="time" name="hora_caducidad" value="">
+        </div>
+      </div>
+
+      <div class="col-12  mt-4 py-2">
+        <label class="border" for="">DESCRIPCION DE PRODUCTO</label>
+        <textarea class="col-12 mt-2 px-2 py-2" name="descripcion_producto" rows="8"  placeholder="Descripcion"></textarea>
+      </div>
+
+      <div class="text-right mt-4 py-2">
+        <button class="btn btn-g btn-small shadow hover-2" type="submit" name="button">Cargar producto</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+{% endblock %}

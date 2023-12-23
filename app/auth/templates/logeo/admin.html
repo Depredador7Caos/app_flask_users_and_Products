@@ -1,0 +1,16 @@
+{% extends 'layout/base.html'%}
+
+{% block title %} {{super()}} administrador {% endblock title %}
+
+{% block content %}
+
+  <h1>Welcomo bro</h1>
+  <div class="">
+    <h3>eternity</h3>
+    <a href="{{ url_for('loading.users_list')}}">Cafe de tres pies ajaj</a>
+    <li class="nav-li"><a class="cw nav-link" href=""    > lista de personas </a></li>
+    <li class="nav-li"><a class="cw nav-link" href="{{ url_for('loading.create_product') }}"> Agregar nuevo producto </a></li>
+    <li class="nav-li"><a class="cw nav-link" href="{{ url_for('loading.get_product') }}"  > Lista productos </a></li>
+  </div>
+
+{% endblock content %}

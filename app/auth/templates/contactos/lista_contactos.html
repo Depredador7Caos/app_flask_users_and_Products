@@ -1,0 +1,32 @@
+{% extends 'layout/base.html'%}
+
+{% block content %}
+
+  <h1>Lista de contatctos</h1>
+  {% if list_user %}
+    <table>
+      <!-- CANECERA DE TABLA -->
+      <thead>
+        <tr class="bg-color">
+          <th class="text-center px-3"> ID_USUARIO</th>
+          <th class="text-center px-3"> Full name</th>
+          <th class="text-center px-3"> E-mail</th>
+          <th class="text-center px-3"> Numbre Phone</th>
+        </tr>
+      </thead>
+
+      <!-- CUERPO DE TABLA -->
+      <tbody>
+        {% for usuarios in list_user %}
+        <tr>
+          <td class="text-center px-3 py-2"> {{usuarios.id}}     </td>
+          <td class="text-center px-3 py-2"> {{usuarios.nombre}} </td>
+          <td class="text-center px-3 py-2"> {{usuarios.email}}  </td>
+          <td class="text-center px-3 py-2"> {{usuarios.phone}}  </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+
+{% endblock%}

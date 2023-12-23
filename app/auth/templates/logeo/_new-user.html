@@ -1,0 +1,44 @@
+{% extends 'layout/base.html' %}
+
+
+{% block content %}
+  <div class="container form py-4 shadow">
+    <h1 class="text-center cw py-4">SING UP</h1>
+    <form class="mr-4 ml-4 px-3 py-2 bg-white shadow" action="/nuevo-usuario" method="post">
+      <div class="mt-4 mb-4">
+
+        <div class="flex">
+          <div class="col-4 mt-2 py-2">
+            <label class="border" for="l1">FIRST-NAME</label>
+            <input class="input-less mt-2 px-2 hover" id="l1" type="text" name="txtFirstName" value="">
+          </div>
+
+          <div class="col-4 mt-2 py-2">
+            <label class="border" for="l2">LAST-NAME</label>
+            <input class="input-less mt-2 px-2 hover" id="l2" type="text" name="txtLastName" value="">
+          </div>
+
+          <div class="col-4 mt-2 py-2">
+            <label class="border" for="l3"> NUMBER PHONE </label>
+            <input class="input-less mt-2 px-2 hover" id="l3" type="number" name="txtNumber" value="">
+          </div>
+        </div>
+
+
+
+        <div class="mt-4">
+          <label class="border" for="l4">CORREO ELECTRONICO</label>
+          <input class="input-less mt-2 px-2 hover" id="l4" type="email" name="txtCorreo" value="">
+        </div>
+
+        <div class="mt-4">
+          <label class="border" for="l5"> NUEVA CONTRASEÑA</label>
+          <input class="input-less mt-2 px-2 hover" id="l5" type="password" name="txtPassword" value="">
+        </div>
+        <div class="text-center mt-4">
+          <button class="input-less btn btn-primary btn-large mt-4 shadow hover" type="submit" name="button">Agregar Usuario</button>
+        </div>
+      </div>
+    </form>
+  </div>
+{% endblock %}

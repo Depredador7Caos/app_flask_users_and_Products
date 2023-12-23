@@ -1,0 +1,69 @@
+{% extends 'layout/base.html'%}
+
+{% block content %}
+  <div class="container shadow py-4">
+    <div class="card-center shadow">
+      <img  class="img-size-medium-fond shadow border-purple-700" src="{{url_for('static', filename='img/portada.jpg')}}" alt="Not Found" width="100%">
+    </div>
+
+    <div class="nav nav-transparent card-center">
+      <ul class="nav-ul">
+        <li class="nav-li"><a class="cp nav-link hover-nav-link "  href="#"> Opcion-1 </a></li>
+        <li class="nav-li"><a class="cp nav-link hover-nav-link "  href="#"> Opcion-2 </a></li>
+        <li class="nav-li"><a class="cp nav-link hover-nav-link "  href="#"> Opcion-3 </a></li>
+        <li class="nav-li"><a class="cp nav-link hover-nav-link "  href="#"> Opcion-4 </a></li>
+        <li class="nav-li"><a class="cp nav-link hover-nav-link "  href="#"> Opcion-5 </a></li>
+      </ul>
+    </div>
+
+
+    <div class="mr-4 ml-4 mt-4 mb-4 flexbox">
+      <div class="mt-4 col-4 ml-3 mr-3">
+        <h3>Practica 9 <i>"inicios de una tienda virtual"</i></h3>
+        <p>Consiste en agregar usuarios, indicando dos tipos de roles, rol 1, donde el usuario es administrador,
+          mientras en el rol 2, es solo el cliente, el encargado de visualizar lo que el admisnistrador actualice
+          mediantee el tiempo.
+        </p>
+      </div>
+
+
+        <div class="margen-2 padd-2 col-8">
+          <table>
+            <tbody class="bg-color">
+              <tr>
+                <th class="text-center px-3">Funciones actuales</th>
+                <th class="text-center px-3">Funciones pendientes</th>
+                <th class="text-center px-3">Funciones a futuro</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>
+                  Agregar usuarios donde el rol 2 es cliente,
+                  Agregar usuarios donde el rol 1 es administyrador.
+                  agregar productos y poder visualizar el mismo.
+                </td>
+                <td>
+                  Actualizar productos, eliminar producto, agustar las rutas dependiendo el rol del usuario
+                </td>
+                <td>
+                  Mejorar las rutas del rol indicado, proteger las rutas, agregar contadores y agregar carrito
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="shadow margen-4 padd-4">
+        <h1 class="text-center cp"> Herramientas de trabajo para sua desarrollo</h1>
+        <div class="flexbox mt-2 card-center">
+          <i class='margen-1 padd-1 icon-2 icon-color-flask bx bxl-flask bx-rotate-90' ></i>
+          <i class='margen-1 padd-1 icon-2 icon-color-html  bx bxl-html5'></i>
+          <i class='margen-1 padd-1 icon-2 icon-color-css   bx bxl-css3'></i>
+          <i class='margen-1 padd-1 icon-2 icon-color-py    bx bxl-python' ></i>
+        </div>
+    </div>
+
+  </div>
+
+{% endblock content %}
